@@ -39,9 +39,16 @@ namespace EsDnevnik
                         if (String.Compare(table.Rows[0]["pass"].ToString(), txt_pass.Text) == 0)
                         {
                             MessageBox.Show("Login successful!");
+                            Program.user_ime = table.Rows[0]["ime"].ToString();
+                            Program.user_prezime = table.Rows[0]["prezime"].ToString();
+                            Program.user_uloga = (int)table.Rows[0]["uloga"];
                             this.Hide();
                             Menu form_meni = new Menu();
                             form_meni.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Pogresan password!");
                         }
                     }
                     else

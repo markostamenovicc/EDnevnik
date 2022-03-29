@@ -8,6 +8,9 @@ namespace EsDnevnik
 {
     static class Program
     {
+        static public int user_uloga = 0;
+        static public string user_ime = "";
+        static public string user_prezime = "";
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
