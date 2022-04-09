@@ -80,5 +80,11 @@ namespace EsDnevnik
             Sifarnik frm_sifarnik = new Sifarnik("Osoba");
             frm_sifarnik.Show();
         }
+
+        private void btn_RaspodelaForm_Click(object sender, EventArgs e)
+        {
+            Raspodela frm_raspodela = new Raspodela();
+            frm_raspodela.Show();
+        }
     }
 }

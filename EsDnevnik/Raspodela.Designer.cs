@@ -127,6 +127,7 @@ namespace EsDnevnik
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(396, 88);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(182, 23);
@@ -134,12 +135,13 @@ namespace EsDnevnik
             // 
             // btn_first
             // 
-            this.btn_first.Location = new System.Drawing.Point(179, 327);
+            this.btn_first.Location = new System.Drawing.Point(182, 327);
             this.btn_first.Name = "btn_first";
             this.btn_first.Size = new System.Drawing.Size(75, 23);
             this.btn_first.TabIndex = 3;
             this.btn_first.Text = "<<";
             this.btn_first.UseVisualStyleBackColor = true;
+            this.btn_first.Click += new System.EventHandler(this.btn_first_Click);
             // 
             // btn_prev
             // 
@@ -149,6 +151,7 @@ namespace EsDnevnik
             this.btn_prev.TabIndex = 3;
             this.btn_prev.Text = "<";
             this.btn_prev.UseVisualStyleBackColor = true;
+            this.btn_prev.Click += new System.EventHandler(this.btn_prev_Click);
             // 
             // btn_add
             // 
@@ -158,6 +161,7 @@ namespace EsDnevnik
             this.btn_add.TabIndex = 3;
             this.btn_add.Text = "Add";
             this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // btn_chng
             // 
@@ -167,6 +171,7 @@ namespace EsDnevnik
             this.btn_chng.TabIndex = 3;
             this.btn_chng.Text = "Change";
             this.btn_chng.UseVisualStyleBackColor = true;
+            this.btn_chng.Click += new System.EventHandler(this.btn_chng_Click);
             // 
             // btn_del
             // 
@@ -176,6 +181,7 @@ namespace EsDnevnik
             this.btn_del.TabIndex = 3;
             this.btn_del.Text = "Delete";
             this.btn_del.UseVisualStyleBackColor = true;
+            this.btn_del.Click += new System.EventHandler(this.btn_del_Click);
             // 
             // btn_next
             // 
@@ -185,6 +191,7 @@ namespace EsDnevnik
             this.btn_next.TabIndex = 3;
             this.btn_next.Text = ">";
             this.btn_next.UseVisualStyleBackColor = true;
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // btn_last
             // 
@@ -194,6 +201,7 @@ namespace EsDnevnik
             this.btn_last.TabIndex = 3;
             this.btn_last.Text = ">>";
             this.btn_last.UseVisualStyleBackColor = true;
+            this.btn_last.Click += new System.EventHandler(this.btn_last_Click);
             // 
             // Raspodela
             // 
@@ -219,6 +227,7 @@ namespace EsDnevnik
             this.Controls.Add(this.cmb_nastavnik);
             this.Name = "Raspodela";
             this.Text = "Raspodela";
+            this.Load += new System.EventHandler(this.Raspodela_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

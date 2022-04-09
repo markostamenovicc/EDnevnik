@@ -31,7 +31,7 @@ namespace EsDnevnik
         {
             this.btn_osobeForm = new System.Windows.Forms.Button();
             this.login_name = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_RaspodelaForm = new System.Windows.Forms.Button();
             this.btn_tabelaBez = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btn_smerovi = new System.Windows.Forms.Button();
@@ -58,15 +58,15 @@ namespace EsDnevnik
             this.login_name.Size = new System.Drawing.Size(0, 15);
             this.login_name.TabIndex = 1;
             // 
-            // button1
+            // btn_RaspodelaForm
             // 
-            this.button1.Location = new System.Drawing.Point(128, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 30);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Videcemo";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btn_osobeForm_Click);
+            this.btn_RaspodelaForm.Location = new System.Drawing.Point(128, 12);
+            this.btn_RaspodelaForm.Name = "btn_RaspodelaForm";
+            this.btn_RaspodelaForm.Size = new System.Drawing.Size(93, 30);
+            this.btn_RaspodelaForm.TabIndex = 0;
+            this.btn_RaspodelaForm.Text = "Raspodela";
+            this.btn_RaspodelaForm.UseVisualStyleBackColor = true;
+            this.btn_RaspodelaForm.Click += new System.EventHandler(this.btn_RaspodelaForm_Click);
             // 
             // btn_tabelaBez
             // 
@@ -148,7 +148,7 @@ namespace EsDnevnik
             this.Controls.Add(this.login_name);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btn_tabelaBez);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_RaspodelaForm);
             this.Controls.Add(this.btn_osobeForm);
             this.Name = "Menu";
             this.Text = "Menu";
@@ -164,7 +164,7 @@ namespace EsDnevnik
 
         private System.Windows.Forms.Button btn_osobeForm;
         private System.Windows.Forms.Label login_name;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_RaspodelaForm;
         private System.Windows.Forms.Button btn_tabelaBez;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btn_smerovi;
