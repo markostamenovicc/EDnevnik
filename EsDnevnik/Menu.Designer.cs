@@ -32,8 +32,12 @@ namespace EsDnevnik
             this.btn_osobeForm = new System.Windows.Forms.Button();
             this.login_name = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_tabelaBez = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btn_smerovi = new System.Windows.Forms.Button();
+            this.btn_skgod = new System.Windows.Forms.Button();
+            this.btn_predmeti = new System.Windows.Forms.Button();
+            this.btn_osobe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_osobeForm
@@ -64,15 +68,15 @@ namespace EsDnevnik
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btn_osobeForm_Click);
             // 
-            // button2
+            // btn_tabelaBez
             // 
-            this.button2.Location = new System.Drawing.Point(247, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 30);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Videcemo";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btn_osobeForm_Click);
+            this.btn_tabelaBez.Location = new System.Drawing.Point(247, 12);
+            this.btn_tabelaBez.Name = "btn_tabelaBez";
+            this.btn_tabelaBez.Size = new System.Drawing.Size(93, 30);
+            this.btn_tabelaBez.TabIndex = 0;
+            this.btn_tabelaBez.Text = "Tabela Bez";
+            this.btn_tabelaBez.UseVisualStyleBackColor = true;
+            this.btn_tabelaBez.Click += new System.EventHandler(this.btn_tabelaBez_Click);
             // 
             // button3
             // 
@@ -84,20 +88,73 @@ namespace EsDnevnik
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.btn_osobeForm_Click);
             // 
+            // btn_smerovi
+            // 
+            this.btn_smerovi.Enabled = false;
+            this.btn_smerovi.Location = new System.Drawing.Point(247, 48);
+            this.btn_smerovi.Name = "btn_smerovi";
+            this.btn_smerovi.Size = new System.Drawing.Size(75, 22);
+            this.btn_smerovi.TabIndex = 2;
+            this.btn_smerovi.Text = "Smerovi";
+            this.btn_smerovi.UseVisualStyleBackColor = true;
+            this.btn_smerovi.Visible = false;
+            this.btn_smerovi.Click += new System.EventHandler(this.btn_smerovi_Click);
+            // 
+            // btn_skgod
+            // 
+            this.btn_skgod.Enabled = false;
+            this.btn_skgod.Location = new System.Drawing.Point(247, 76);
+            this.btn_skgod.Name = "btn_skgod";
+            this.btn_skgod.Size = new System.Drawing.Size(109, 22);
+            this.btn_skgod.TabIndex = 2;
+            this.btn_skgod.Text = "Skolske Godine";
+            this.btn_skgod.UseVisualStyleBackColor = true;
+            this.btn_skgod.Visible = false;
+            this.btn_skgod.Click += new System.EventHandler(this.btn_skgod_Click);
+            // 
+            // btn_predmeti
+            // 
+            this.btn_predmeti.Enabled = false;
+            this.btn_predmeti.Location = new System.Drawing.Point(247, 104);
+            this.btn_predmeti.Name = "btn_predmeti";
+            this.btn_predmeti.Size = new System.Drawing.Size(75, 22);
+            this.btn_predmeti.TabIndex = 2;
+            this.btn_predmeti.Text = "Predmeti";
+            this.btn_predmeti.UseVisualStyleBackColor = true;
+            this.btn_predmeti.Visible = false;
+            this.btn_predmeti.Click += new System.EventHandler(this.btn_predmeti_Click);
+            // 
+            // btn_osobe
+            // 
+            this.btn_osobe.Enabled = false;
+            this.btn_osobe.Location = new System.Drawing.Point(247, 132);
+            this.btn_osobe.Name = "btn_osobe";
+            this.btn_osobe.Size = new System.Drawing.Size(75, 22);
+            this.btn_osobe.TabIndex = 2;
+            this.btn_osobe.Text = "Osobe";
+            this.btn_osobe.UseVisualStyleBackColor = true;
+            this.btn_osobe.Visible = false;
+            this.btn_osobe.Click += new System.EventHandler(this.btn_osobe_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_osobe);
+            this.Controls.Add(this.btn_predmeti);
+            this.Controls.Add(this.btn_skgod);
+            this.Controls.Add(this.btn_smerovi);
             this.Controls.Add(this.login_name);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_tabelaBez);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_osobeForm);
             this.Name = "Menu";
             this.Text = "Menu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
             this.Load += new System.EventHandler(this.Menu_Load);
+            this.Click += new System.EventHandler(this.Menu_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,7 +165,11 @@ namespace EsDnevnik
         private System.Windows.Forms.Button btn_osobeForm;
         private System.Windows.Forms.Label login_name;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_tabelaBez;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_smerovi;
+        private System.Windows.Forms.Button btn_skgod;
+        private System.Windows.Forms.Button btn_predmeti;
+        private System.Windows.Forms.Button btn_osobe;
     }
 }

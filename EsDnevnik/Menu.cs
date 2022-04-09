@@ -32,5 +32,53 @@ namespace EsDnevnik
         {
             Application.Exit();
         }
+
+        private void Menu_Click(object sender, EventArgs e)
+        {
+            btn_smerovi.Enabled = false;
+            btn_skgod.Enabled = false;
+            btn_predmeti.Enabled = false;
+            btn_osobe.Enabled = false;
+            btn_smerovi.Visible = false;
+            btn_skgod.Visible = false;
+            btn_predmeti.Visible = false;
+            btn_osobe.Visible = false;
+        }
+
+        private void btn_tabelaBez_Click(object sender, EventArgs e)
+        {
+            btn_smerovi.Enabled = true;
+            btn_skgod.Enabled = true;
+            btn_predmeti.Enabled = true;
+            btn_osobe.Enabled = true;
+            btn_smerovi.Visible = true;
+            btn_skgod.Visible = true;
+            btn_predmeti.Visible = true;
+            btn_osobe.Visible = true;
+        }
+
+        private void btn_smerovi_Click(object sender, EventArgs e)
+        {
+            Sifarnik frm_sifarnik = new Sifarnik("smer");
+            frm_sifarnik.Show();
+        }
+
+        private void btn_skgod_Click(object sender, EventArgs e)
+        {
+            Sifarnik frm_sifarnik = new Sifarnik("Skolska_godina");
+            frm_sifarnik.Show();
+        }
+
+        private void btn_predmeti_Click(object sender, EventArgs e)
+        {
+            Sifarnik frm_sifarnik = new Sifarnik("Predmet");
+            frm_sifarnik.Show();
+        }
+
+        private void btn_osobe_Click(object sender, EventArgs e)
+        {
+            Sifarnik frm_sifarnik = new Sifarnik("Osoba");
+            frm_sifarnik.Show();
+        }
     }
 }
