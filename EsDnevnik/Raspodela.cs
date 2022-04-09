@@ -174,8 +174,6 @@ namespace EsDnevnik
 
         private void btn_chng_Click(object sender, EventArgs e)
         {
-            // UPDATE osoba SET ime = 'Marko', prezime = 'Peric', adresa = 'Studenac 8', jmbg = '123451352315', email = 'marko@gmail.com', pass = '121231', uloga = '1'
-            // WHERE id = 3
             StringBuilder cmd = new StringBuilder("UPDATE raspodela SET ");
             cmd.Append("godina_id = '" + cmb_godina.SelectedValue + "', ");
             cmd.Append("nastavnik_id = '" +cmb_nastavnik.SelectedValue + "', ");
