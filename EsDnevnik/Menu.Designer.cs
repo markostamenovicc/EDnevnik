@@ -33,11 +33,12 @@ namespace EsDnevnik
             this.login_name = new System.Windows.Forms.Label();
             this.btn_RaspodelaForm = new System.Windows.Forms.Button();
             this.btn_tabelaBez = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_oceneForm = new System.Windows.Forms.Button();
             this.btn_smerovi = new System.Windows.Forms.Button();
             this.btn_skgod = new System.Windows.Forms.Button();
             this.btn_predmeti = new System.Windows.Forms.Button();
             this.btn_osobe = new System.Windows.Forms.Button();
+            this.btn_upis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_osobeForm
@@ -78,15 +79,15 @@ namespace EsDnevnik
             this.btn_tabelaBez.UseVisualStyleBackColor = true;
             this.btn_tabelaBez.Click += new System.EventHandler(this.btn_tabelaBez_Click);
             // 
-            // button3
+            // btn_oceneForm
             // 
-            this.button3.Location = new System.Drawing.Point(366, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 30);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Videcemo";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.btn_osobeForm_Click);
+            this.btn_oceneForm.Location = new System.Drawing.Point(366, 12);
+            this.btn_oceneForm.Name = "btn_oceneForm";
+            this.btn_oceneForm.Size = new System.Drawing.Size(93, 30);
+            this.btn_oceneForm.TabIndex = 0;
+            this.btn_oceneForm.Text = "Ocene";
+            this.btn_oceneForm.UseVisualStyleBackColor = true;
+            this.btn_oceneForm.Click += new System.EventHandler(this.btn_oceneForm_Click);
             // 
             // btn_smerovi
             // 
@@ -136,17 +137,28 @@ namespace EsDnevnik
             this.btn_osobe.Visible = false;
             this.btn_osobe.Click += new System.EventHandler(this.btn_osobe_Click);
             // 
+            // btn_upis
+            // 
+            this.btn_upis.Location = new System.Drawing.Point(492, 12);
+            this.btn_upis.Name = "btn_upis";
+            this.btn_upis.Size = new System.Drawing.Size(88, 30);
+            this.btn_upis.TabIndex = 3;
+            this.btn_upis.Text = "Upisnica";
+            this.btn_upis.UseVisualStyleBackColor = true;
+            this.btn_upis.Click += new System.EventHandler(this.btn_upis_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_upis);
             this.Controls.Add(this.btn_osobe);
             this.Controls.Add(this.btn_predmeti);
             this.Controls.Add(this.btn_skgod);
             this.Controls.Add(this.btn_smerovi);
             this.Controls.Add(this.login_name);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btn_oceneForm);
             this.Controls.Add(this.btn_tabelaBez);
             this.Controls.Add(this.btn_RaspodelaForm);
             this.Controls.Add(this.btn_osobeForm);
@@ -166,10 +178,11 @@ namespace EsDnevnik
         private System.Windows.Forms.Label login_name;
         private System.Windows.Forms.Button btn_RaspodelaForm;
         private System.Windows.Forms.Button btn_tabelaBez;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_oceneForm;
         private System.Windows.Forms.Button btn_smerovi;
         private System.Windows.Forms.Button btn_skgod;
         private System.Windows.Forms.Button btn_predmeti;
         private System.Windows.Forms.Button btn_osobe;
+        private System.Windows.Forms.Button btn_upis;
     }
 }

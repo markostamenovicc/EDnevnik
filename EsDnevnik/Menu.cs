@@ -86,5 +86,17 @@ namespace EsDnevnik
             Raspodela frm_raspodela = new Raspodela();
             frm_raspodela.Show();
         }
+
+        private void btn_oceneForm_Click(object sender, EventArgs e)
+        {
+            Ocena frm_ocena = new Ocena();
+            frm_ocena.Show();
+        }
+
+        private void btn_upis_Click(object sender, EventArgs e)
+        {
+            upisnica frm_upisnica = new upisnica();
+            frm_upisnica.Show();
+        }
     }
 }

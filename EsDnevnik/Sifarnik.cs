@@ -36,8 +36,8 @@ namespace EsDnevnik
             if (changed != null)
             {
                 adapter.Update(changed);
-                this.Close();
             }
+            this.Close();
         }
     }
 }
